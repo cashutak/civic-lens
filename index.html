@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="styles.css">
 
   <title>Civic Lens</title>
-  
+
 </head>
 <body>
   <a class="skip-link" href="#main-content">Skip to main content</a>
@@ -37,7 +37,7 @@
         <label for="menu-toggle" class="menu-button">Menu</label>
         <ul class="menu">
           <li><a href="#breaking-news">Breaking News</a></li>
-          <li><a href="#featured-aticles">Featured Articles</a></li>
+          <li><a href="#featured-articles">Featured Articles</a></li>
           <li><a href="#alerts">Alerts</a></li>
           <li><a href="#social">Social</a></li>
         </ul>
@@ -100,10 +100,10 @@
       <form method="post" action="https://wp.zybooks.com/form-viewer.php">
         <div class="form-row">
           <label for="name">Name</label>
-          <input type="text" id="name" name="name">
+          <input type="text" id="name" name="name" required>
 
           <label for="mobile">Mobile</label>
-          <input type="tel" id="mobile" name="mobile">
+          <input type="tel" id="mobile" name="mobile" required>
         </div>
 
         <fieldset>
@@ -151,7 +151,7 @@
       } else {
         // No class set yet, determine system preference
         const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-        body.classList.add(prefersDark ? 'light-mode' : 'dark-mode');
+        body.classList.add(prefersDark ? 'dark-mode' : 'light-mode');
       }
     });
   </script>
