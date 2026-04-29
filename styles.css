@@ -45,14 +45,7 @@ body.dark-mode .article-grid article {
   background-color: var(--truth-text);
   color: var(--watchdog-white);
 }
-body.dark-mode h2,
-body.dark-mode .article-grid h3 {
-  color: var(--watchdog-white);
-}
 
-body.dark-mode .article-grid h3 {
-  border-bottom-color: var(--watchdog-white);
-}
 
 #theme-toggle {
   position: absolute;
@@ -304,7 +297,7 @@ blockquote {
 
   .form-row {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 0.5rem;
   }
 }
